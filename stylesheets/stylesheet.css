@@ -2,6 +2,10 @@ head {
     color:orange;
     border-color:red;
 }
+head:hover {
+    color:red;
+    border-color:orange;
+}
 body {
     font-size:15px;
     font-family:'Lucida Grande', 'Lucida Sans Unicode', serif;
