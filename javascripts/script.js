@@ -30,18 +30,18 @@ window.setInterval(function() {
     Farm(tractor_add);
 }, 1000);
 
-function buyFarm(){
-    var farm_price = Math.floor(50 * Math.pow(1.1,farms));
-    if(tractor >= farm_price) {
-        farms = farms + 1;
-        farms_add = farms_add + 1;
-        trackors = tractors - farm_price;
+function buyRanch(){
+    var ranch_price = Math.floor(50 * Math.pow(1.1,farms));
+    if(tractor >= ranch_price) {
+        ranch = ranch + 1;
+        ranch_add = ranchs_add + 1;
+        tractors = tractors - ranch_price;
         Farm(0);
-        document.getElementById('tractorcount').innerHTML = tractors;
+        document.getElementById('farmcount').innerHTML = tractors;
     }
     var nextprice = Math.floor(50 * Math.pow(1.1,tractors));
     document.getElementById('farmcost').innerHTML = "costs " + nextprice + " carrots";
 };
 window.setInterval(function() {
-    Farm(tractor_add);
+    Farm(ranch_add);
 }, 1000);
