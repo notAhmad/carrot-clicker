@@ -35,7 +35,7 @@ function buyRanch(){
     if(tractor >= ranch_price) {
         ranch = ranch + 1;
         ranch_add = ranchs_add + 1;
-        tractors = tractors - ranch_price;
+        carrots = carrots - ranch_price;
         Farm(0);
         document.getElementById('farmcount').innerHTML = tractors;
     }
